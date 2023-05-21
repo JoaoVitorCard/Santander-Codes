@@ -2,4 +2,4 @@
 
 # Salvando alterações no GIT
 
-- Uso do comando git restore
+- Uso do comando git restore e criando um novo repositório

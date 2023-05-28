@@ -2,17 +2,16 @@ package POOjava;
 
 import POOjava.Cachorro.Cachorro;
 
-public class Encapsulameno {
+public class ModelagemOrientadaAObjetos {
   public static void main(String[] args) {
 
-    Cachorro cachorro1 = new Cachorro();
-    Cachorro cachorro2 = new Cachorro("Puppy", "Marrom", 25, 5.5, 5, "carinho");
+    Cachorro cachorro1 = new Cachorro("Puppy", "Marrom", 25, 5.5, 5, "carinho");
 
-    System.out.println(cachorro2.getNome());
-    System.out.println(cachorro2.getPeso());
+    System.out.println(cachorro1.getNumeroDeCachorro());
+    // Cachorro cachorro2 = new Cachorro("Puppy", "Marrom", 25, 5.5, 5, "carinho");
+    Cachorro cachorro2 = new Cachorro("Rex", "Branco", 10, 10.5, 5, "carinho");
+    System.out.println(cachorro1.getNumeroDeCachorro());
+    System.out.println(cachorro2.getNumeroDeCachorro());
 
-    System.out.println("O cachorro está " + cachorro1.interagir("carinho"));
-    System.out.println("O cachorro está " + cachorro1.interagir("cala a boca"));
-    System.out.println("O cachorro está " + cachorro1.interagir("nada"));
   }
 }

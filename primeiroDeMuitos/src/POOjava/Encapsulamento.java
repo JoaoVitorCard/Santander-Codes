@@ -2,7 +2,7 @@ package POOjava;
 
 import POOjava.Cachorro.Cachorro;
 
-public class Encapsulameno {
+public class Encapsulamento {
   public static void main(String[] args) {
 
     Cachorro cachorro1 = new Cachorro();

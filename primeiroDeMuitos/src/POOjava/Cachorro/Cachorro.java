@@ -3,6 +3,7 @@ package POOjava.Cachorro;
 public class Cachorro {
 
   // Atributos
+  static int numeroDeCachorros;
   private String nome;
   private String cor;
   private int altura;
@@ -22,9 +23,15 @@ public class Cachorro {
     this.peso = peso;
     this.tamanhoDoRabo = tamanhoDoRabo;
     this.estadoDeEspirito = estadoDeEspirito;
+
+    numeroDeCachorros++;
   }
 
   // Métodos
+  public int getNumeroDeCachorro() {
+    return Cachorro.numeroDeCachorros;
+  }
+
   public String getNome() {
     return this.nome;
   }
@@ -104,5 +111,10 @@ public class Cachorro {
         break;
     }
     return estadoDeEspirito;
+  }
+
+  @Override
+  public String toString() {
+    return "Cachorro{" + "nome='" + nome + '\'' + '}';
   }
 }

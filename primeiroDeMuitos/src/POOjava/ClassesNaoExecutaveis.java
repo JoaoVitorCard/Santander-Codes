@@ -1,12 +1,12 @@
 package POOjava;
 
-import POOjava.Cachorro.Cachorro;
+import POOjava.Animais.Cachorro;
 
 public class ClassesNaoExecutaveis {
 
   public static void main(String[] args) {
 
-    Cachorro cachorro1 = new Cachorro();
+    Cachorro cachorro1 = new Cachorro(null, null, 0, 0, 0, null);
 
     cachorro1.nome = "Puppy";
     cachorro1.cor = "Marrom";

@@ -4,7 +4,7 @@ public class HelloWorld {
   public static void main(String[] args) {
     System.out.println("Hello World!");
 
-    byte variavelByte = -129;
+    byte variavelByte = -12;
     // byte: -128 ~ 127
     // short: -32768 ~ 32767
     // char: 0 ~ 65535

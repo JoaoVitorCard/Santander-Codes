@@ -1,11 +1,11 @@
 package POOjava;
 
-import POOjava.Cachorro.Cachorro;
+import POOjava.Animais.Cachorro;
 
 public class Encapsulamento {
   public static void main(String[] args) {
 
-    Cachorro cachorro1 = new Cachorro();
+    Cachorro cachorro1 = new Cachorro(null, null, 0, 0, 0, null);
     Cachorro cachorro2 = new Cachorro("Puppy", "Marrom", 25, 5.5, 5, "carinho");
 
     System.out.println(cachorro2.getNome());

@@ -1,28 +1,20 @@
-package POOjava.Cachorro;
+package POOjava.Animais;
 
-public class Cachorro {
+public class Cachorro extends Animal {
 
   // Atributos
   static int numeroDeCachorros;
-  private String nome;
-  private String cor;
-  private int altura;
-  private double peso;
   private int tamanhoDoRabo;
-  private String estadoDeEspirito;
 
   // Construtores
 
-  public Cachorro() {
-  }
-
   public Cachorro(String nome, String cor, int altura, double peso, int tamanhoDoRabo, String estadoDeEspirito) {
+    super(nome, cor, peso);
     this.nome = nome;
     this.cor = cor;
     this.altura = altura;
     this.peso = peso;
     this.tamanhoDoRabo = tamanhoDoRabo;
-    this.estadoDeEspirito = estadoDeEspirito;
 
     numeroDeCachorros++;
   }
@@ -76,25 +68,11 @@ public class Cachorro {
     return this.estadoDeEspirito;
   }
 
-  public void latir() {
-    System.out.println("AU, AU");
-  }
-
   public String pegar() {
     return "Bolinha";
   }
 
   public String interagir(String acao) {
-    // if (acao.equals("carinho")) {
-    // this.estadoDeEspirito = "Feliz";
-    // } else if (acao.equals("Cala a boca")) {
-    // this.estadoDeEspirito = "chateado";
-    // } else if (acao.equals("pisar na patinha")) {
-    // this.estadoDeEspirito = "triste";
-    // } else {
-    // this.estadoDeEspirito = "Neutro";
-    // }
-    // return estadoDeEspirito;
 
     switch (acao) {
       case "carinho":
@@ -116,5 +94,10 @@ public class Cachorro {
   @Override
   public String toString() {
     return "Cachorro{" + "nome='" + nome + '\'' + '}';
+  }
+
+  @Override
+  public void soar() {
+    System.out.println("AU AU!!");
   }
 }
